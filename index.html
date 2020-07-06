@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Happy Birthday!</title>
+
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+</head>
+
+<body>
+  
+  <canvas id=c></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="container" id="count">
+    
+    <h1 id="head">Countdown to your birthday:</h1>
+    <ul>
+      <li><span id="day"></span>days</li>
+      <li><span id="hour"></span>hours</li>
+      <li><span id="minute"></span>minutes</li>
+      <li><span id="second"></span>seconds</li>
+    </ul>
+  </div>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
+    
+  </div>
+  <div id ="card-container" >
+    <button id="btn" style="display: none;" class="btn">click me</button>
+  <div id="card" style="display: none;" >
+    <div id="card-inside" style="display:flex;">
+      <div class="wrap">
+        <p class='paragraph'>Hey Sara,</p>
+        <p class='paragraph'>happiest birthday</p>
+        <p class='paragraph'>I wish you achieve all your dreams and goals</p>
+        <p class='paragraph'>
+          and sorry for not giving you my gift on time
+        </p>
+        <p class='paragraph'><a href="https://www.youtube.com/watch?v=_z-1fTlSDF0&ab_channel=infobells" target="_blank">CLICK HERE TOO :)</a></p>
+        <p class="paragraph signed ">REVAN</p>
+        
+      </div>
+    </div>
+
+    <div id="card-front" style="display:flex;">
+      <div class="wrap">
+        <h1>Happy Birthday!</h1>
+      </div>
+      <div class="card-front_inside">
+        <br> <br> <br>
+        <div class="polaroid">
+          <div class="img" style="background-image: url('Cute-Baby-wb01403191.jpg')"></div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+      <button id="open">&lt;</button>
+      <button id="close">&lt;</button>
+    </div>
+  </div>
+  
+
+  </div>
+  
+</body>
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="./scripts/card.js"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
+
+
+</html>
